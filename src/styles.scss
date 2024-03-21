@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("../node_modules/@fortawesome/fontawesome-free/css/all.css");
+
+/* Importing Bootstrap SCSS file. */
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+// Import my scss Helper Classes
+@import "./resources/helpers.scss";
+@import "./resources/colors.scss";
+// tailwind resources
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
