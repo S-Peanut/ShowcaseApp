@@ -1,0 +1,9 @@
+@import url("../../../assets/styles/colors.scss");
+.nav-container {
+  border: 2px solid red;
+  border-radius: 30px;
+}
+
+.nav-container nav .nav-btn {
+  margin: 5px;
+}

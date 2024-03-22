@@ -10,8 +10,9 @@
 
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
 // Import my scss Helper Classes
-@import "./resources/helpers.scss";
-@import "./resources/colors.scss";
+@import "./assets/styles/helpers.scss";
+@import "./assets/styles/colors.scss";
+@import "./assets/styles/fonts.scss";
 // tailwind resources
 @tailwind base;
 @tailwind components;
