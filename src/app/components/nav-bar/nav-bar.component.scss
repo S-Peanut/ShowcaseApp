@@ -2,7 +2,7 @@
 .mobile {
     .toggle-btn {
         color: bisque;
-        font-size: large;
+        animation: slide-in 1s;
     }
     nav {
         &.slide-in {
