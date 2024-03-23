@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-container',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./container.component.scss']
 })
 export class ContainerComponent {
+scrollTop = 0;
+hideNav = false;   
 
+@HostListener('window:scroll', ['$event']) 
+onScroll() {
+        this.hideNav = this.scrollTop < window.scrollY;
+        this.scrollTop = window.scrollY;
+        }
 }

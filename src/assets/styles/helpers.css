@@ -1463,12 +1463,6 @@
   zoom: 1;
 }
 
-.d-none,
-.hide,
-.hidden {
-  display: none !important;
-}
-
 .rel,
 .relative {
   position: relative !important;

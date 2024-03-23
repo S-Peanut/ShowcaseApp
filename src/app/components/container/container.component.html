@@ -1,14 +1,18 @@
 <div class="page-content">
-    <div class="header flex-center">
+    <div class="cover-container">
+        <app-cover></app-cover>
+    </div>
+    <div class="nav" [class.hide-nav]="hideNav">
         <app-nav-bar></app-nav-bar>
-        <!-- <app-cover></app-cover> -->
+    </div>
+
+
+    <div class="main-content flex justify-center">
+        <!-- <app-showcase-item></app-showcase-item>
+        <app-showcase-item></app-showcase-item>
+        <app-showcase-item></app-showcase-item> -->
     </div>
     <!-- 
-        <div class="main-content flex justify-center">
-        <app-showcase-item></app-showcase-item>
-        <app-showcase-item></app-showcase-item>
-        <app-showcase-item></app-showcase-item>
-        </div>
 
         <div class="contact-form flex justify-center">
         <app-contact-form></app-contact-form>

@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
+mobileNavOn = false;
 
+toggleMenu() {
+        if(this.mobileNavOn) {
+                this.mobileNavOn = false;
+        } else {
+                this.mobileNavOn = true;
+        }
+}
 }

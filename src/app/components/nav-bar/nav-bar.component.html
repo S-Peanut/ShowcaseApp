@@ -1,8 +1,20 @@
-<div class="nav-container">
+<div class="sm:hidden mobile">
+    <button *ngIf="!mobileNavOn" class="toggle-btn" (click)="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+    <nav *ngIf="mobileNavOn" (click)="toggleMenu()" class="flex-center column poppins-light">
+        <button class="nav-btn">
+                        <img src="../../../assets/icons/Home.svg" class="svg-icon" alt="svg-icon" />  
+                </button>
+        <button class="nav-btn">@bout</button>
+        <button class="nav-btn">Projects</button>
+        <button class="nav-btn">Contact</button>
+    </nav>
+</div>
+
+<div class="hidden sm:block full-size">
     <nav class="flex-center poppins-light">
         <button class="nav-btn">
-                <img src="../../../assets/icons/Home.svg" class="svg-icon" alt="svg-icon" />  
-        </button>
+                    <img src="../../../assets/icons/Home.svg" class="svg-icon" alt="svg-icon" />  
+            </button>
         <button class="nav-btn">@bout</button>
         <button class="nav-btn">Projects</button>
         <button class="nav-btn">Contact</button>
