@@ -1,6 +1,6 @@
 <div class="sm:hidden mobile">
     <button *ngIf="!mobileNavOn" class="toggle-btn" (click)="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
-    <nav *ngIf="mobileNavOn" (click)="toggleMenu()" class="flex-center column poppins-light">
+    <nav [ngClass]="{'slide-in': mobileNavOn, 'slide-out' : !mobileNavOn}" (click)="toggleMenu()" class="flex-center column poppins-light">
         <button class="nav-btn">
                         <img src="../../../assets/icons/Home.svg" class="svg-icon" alt="svg-icon" />  
                 </button>

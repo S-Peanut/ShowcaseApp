@@ -1,10 +1,19 @@
 @import '../../../assets/styles/colors.scss';
 .mobile {
     .toggle-btn {
-        color: #FFD49C;
+        color: bisque;
         font-size: large;
     }
     nav {
+        &.slide-in {
+            animation: slide-in 1s;
+        }
+        &.slide-out {
+            opacity: 0;
+            visibility: hidden;
+            transition: visibility 1s, opacity 1s linear;
+            animation: slide-out 1s;
+        }
         color: #ffffff;
         position: fixed;
         top: 0;
@@ -58,5 +67,23 @@
                 -webkit-text-fill-color: transparent;
             }
         }
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-100%);
     }
 }
