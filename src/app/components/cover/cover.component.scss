@@ -1,7 +1,12 @@
+@import '../../../assets/styles/index.scss';
 .cover-container {
     background-color: #1C1E22;
-    background-image: radial-gradient(circle, rgba(51, 69, 233, 0.465) 10%, rgba(253, 29, 29, 0) 68%);
-    background-position: bottom 0 right -60vw;
+    background-size: 200% auto;
+    background-image: radial-gradient(circle, rgba(51, 69, 233, 0.465) 10%, rgba(253, 29, 29, 0) 48%);
+    background-position: bottom 0 right -120vw;
+    @media screen and (max-width: $sm-screen) {
+        background-position: bottom 0 right -120vw;
+    }
     background-repeat: no-repeat;
     overflow: hidden; // hides - margin of the widget
     width: 100%;

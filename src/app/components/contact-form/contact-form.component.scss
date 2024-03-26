@@ -1,10 +1,14 @@
-@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/index.scss';
 .contact-form-container {
     width: 100%;
     height: 100%;
     color: $color-bisque2;
-    background-image: radial-gradient(circle, rgba(51, 69, 233, 0.465) 10%, rgba(253, 29, 29, 0) 68%);
-    background-position: bottom 0 left -60vw;
+    background-size: 200% auto;
+    background-image: radial-gradient(circle, rgba(51, 69, 233, 0.465) 10%, rgba(253, 29, 29, 0) 48%);
+    background-position: bottom left -140vw;
+    @media screen and (min-width: $sm-screen) {
+        background-position: bottom left -120vw;
+    }
     background-repeat: no-repeat;
     background-color: $color-dark2;
     .form-elements {
@@ -19,10 +23,12 @@
                     transition: border 1s;
                     transition: box-shadow 1s;
                     &:hover,
-                    &:focus {
+                    &:focus,
+                    &:-webkit-autofill {
                         border-bottom: 1px solid bisque;
-                        box-shadow: 0px 1px 0px 0px bisque;
-                        color: bisque;
+                        box-shadow: 0 6px 6px -8px bisque;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: $color-bisque2;
                         ~.input-icon {
                             color: red;
                         }
@@ -31,34 +37,9 @@
                 .input-icon {
                     color: $color-bisque2;
                     padding: 5px;
-                    transition: color 1s;
+                    transition: color .5s;
                 }
             }
-        }
-    }
-    .submit-btn {
-        border-radius: 2rem;
-        padding: 15px 30px;
-        text-align: center;
-        transition: 0.5s;
-        background-size: 200% auto;
-        color: white;
-        display: block;
-        border: 0px;
-        font-weight: 700;
-        box-shadow: 0px 0px 14px -7px $color-dark1;
-        background-image: linear-gradient(45deg, $color-alpha-blue 0%, $color-dark2 51%, $color-dark2 100%);
-        cursor: pointer;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        &:hover {
-            background-position: right center;
-            color: rgba(248, 72, 69, 0.796);
-            text-decoration: none;
-        }
-        &:active {
-            transform: scale(0.95);
         }
     }
 }
