@@ -1,3 +1,5 @@
+const { faL } = require('@fortawesome/free-solid-svg-icons');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
@@ -6,5 +8,7 @@ module.exports = {
     theme: {
         extend: {},
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/forms'),
+    ],
 }

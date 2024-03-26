@@ -1,0 +1,40 @@
+@import '../../../assets/styles/colors.scss';
+.contact-form-container {
+    width: 100%;
+    height: 100%;
+    color: $color-bisque2;
+    background-color: $color-dark2;
+    .form-elements {
+        form {
+            label {
+                input,
+                textarea {
+                    background-color: $color-dark2;
+                    border: none;
+                    font-style: italic;
+                    border-bottom: 1px solid $color-gray;
+                    transition: border 1s;
+                    transition: box-shadow 1s;
+                    &:hover,
+                    &:focus {
+                        border-bottom: 1px solid bisque;
+                        box-shadow: 0px 1px 0px 0px bisque;
+                        color: bisque;
+                        ~.input-icon {
+                            color: red;
+                        }
+                    }
+                }
+                .input-icon {
+                    color: $color-bisque2;
+                    padding: 5px;
+                    transition: color 1s;
+                }
+            }
+        }
+    }
+    .submit-btn {
+        border: 2px solid red;
+        border-radius: 2rem;
+    }
+}

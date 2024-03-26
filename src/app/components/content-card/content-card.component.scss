@@ -1,0 +1,43 @@
+@import '../../../assets/styles/colors.scss';
+.content-card-container {
+    .text-section {
+        position: relative;
+        color: $color_dark1;
+        padding: 20px;
+        .tag-icon {
+            position: absolute;
+            &.open {
+                top: -30px;
+                left: 0;
+                animation: slide-in-left 5s;
+            }
+            &.close {
+                bottom: -30px;
+                right: 0;
+                animation: slide-in-right 5s;
+            }
+        }
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}

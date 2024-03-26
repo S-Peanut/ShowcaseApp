@@ -1,1 +1,26 @@
-<p>contact-form works!</p>
+<div class="contact-form-container flex-center column p-6">
+    <div class="form-info p-10">
+        <h2 class="form-title fira-sans-bold text-4xl pb-3">Let`s talk</h2>
+        <div class="form-desc fira-sans-light text-xl">If you have a project design or a revolutionary idea the form below is the best way to contact me!</div>
+    </div>
+    <div class="form-elements fira-sans-regular">
+        <form [formGroup]="FormData" class="grid grid-rows-6 grid-flow-row gap-y-8 md:grid-cols-9 md:gap-x-20">
+            <label class="flex md:col-start-2 md:col-end-4">
+                    <input name="Email" formControlName="Email" type="email" class="mt-0 block w-full px-0.5 focus:ring-0" placeholder="Your email">
+                    <span class="input-icon flex-center"><i class="fa-solid fa-at"></i></span>
+                </label>
+            <label class="flex md:col-start-2 md:col-end-4" for="Phone">
+                    <input type="tel" class="mt-0 block w-full px-0.5 focus:ring-0" placeholder="Your phone number" formControlName="Phone" name="Phone">
+                    <span class="flex-center input-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                </label>
+            <label class="flex md:col-start-2 md:col-end-4" for="Fullname">
+                    <input type="text" formControlName="Fullname" name="Fullname" class="mt-0 block w-full px-0.5 focus:ring-0" placeholder="Your name">
+                    <span class="flex-center input-icon"><i class="fa-regular fa-user"></i></span>
+                </label>
+            <label class="block row-span-2 md:row-start-1 md:col-start-4 md:col-end-8" for="Comment">
+                    <textarea formControlName="Comment" name="Comment" class="resize-none mt-0 block w-full h-full px-0.5 focus:ring-0" rows="2" placeholder="Provide a short description of your project and I will contact you shortly."></textarea>
+                </label>
+            <button type="submit" class="submit-btn md:row-start-3 md:col-start-5 md:col-end-7 " [disabled]="!FormData.valid">Send <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+    </div>
+</div>
