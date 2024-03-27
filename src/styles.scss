@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
+body {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+}
+
 @import url("../node_modules/@fortawesome/fontawesome-free/css/all.css");
 // tailwind resources
 @import "tailwindcss/base";
@@ -10,5 +18,7 @@
 @import "./node_modules/bootstrap/scss/bootstrap";
 // Import my scss Helper Classes
 @import "./assets/styles/index.scss";
+
 /* Importing Bootstrap SCSS file. */
+
 @import "./node_modules/bootstrap/scss/bootstrap";
