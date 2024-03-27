@@ -1,4 +1,4 @@
-    @import '../../../assets/styles/index.scss';
+    @import '../../../assets/styles/colors.scss';
     .page-content {
         .footer {
             width: 100%;
@@ -14,7 +14,7 @@
             width: 100%;
             height: 10%;
             &.hide-nav {
-                top: -100px;
+                top: -10vh;
                 transition: top 2s;
             }
         }
