@@ -4,5 +4,11 @@
 // tailwind resources
 @import "tailwindcss/base";
 @import "tailwindcss/utilities";
+
+/* Importing Bootstrap SCSS file. */
+
+@import "./node_modules/bootstrap/scss/bootstrap";
 // Import my scss Helper Classes
 @import "./assets/styles/index.scss";
+/* Importing Bootstrap SCSS file. */
+@import "./node_modules/bootstrap/scss/bootstrap";

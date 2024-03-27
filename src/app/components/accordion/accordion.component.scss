@@ -1,0 +1,89 @@
+@import '../../../assets/styles/variables.scss';
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.accordion-container {
+    section {
+        background-color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .inner-container {
+            width: 100%;
+            max-width: 80rem;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            .accordion-item {
+                background-color: #000000;
+                border: none;
+                hr {
+                    border: 1px solid rgba(255, 255, 255, 0.5);
+                }
+                .accordion-header {
+                    font-size: 1.6rem;
+                    color: rgba(255, 255, 255, .8);
+                    text-decoration: none;
+                    background-color: #000000;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 1rem 0;
+                    h3 {
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
+                    i {
+                        color: #e7d5ff;
+                        padding: .5rem;
+                    }
+                    ul {
+                        display: flex;
+                        align-items: flex-end;
+                        list-style-type: none;
+                        margin-left: 25px;
+                    }
+                    li {
+                        font-size: 10px;
+                        color: rgba(255, 255, 255, 0.4);
+                        padding: 0 0 1px 5px;
+                    }
+                    .fa-chevron-down {
+                        display: none;
+                    }
+                }
+                .accordion-body {
+                    max-height: 0;
+                    overflow: hidden;
+                    position: relative;
+                    background-color: #000;
+                    transition: max-height 850ms;
+                    p {
+                        color: #fff;
+                        font-size: 15px;
+                        padding: 2rem;
+                    }
+                }
+                &:target {
+                    .accordion-body {
+                        max-height: 20rem;
+                    }
+                    .accordion-header .fa-chevron-right {
+                        display: none
+                    }
+                    .accordion-header .fa-chevron-down {
+                        display: block;
+                    }
+                }
+                .fa-solid {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

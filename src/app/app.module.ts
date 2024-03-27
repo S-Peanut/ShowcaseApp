@@ -15,6 +15,7 @@ import { ContentCardComponent } from './components/content-card/content-card.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from './services/contact.service';
+import { AccordionComponent } from './components/accordion/accordion.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ContactService } from './services/contact.service';
     NavBarComponent,
     ContactFormComponent,
     ContainerComponent,
-    ContentCardComponent
+    ContentCardComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,7 @@ import { ContactService } from './services/contact.service';
     FontAwesomeModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [ContactService],
   bootstrap: [AppComponent]
