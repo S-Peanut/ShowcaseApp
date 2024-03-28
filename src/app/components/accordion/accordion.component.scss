@@ -51,7 +51,7 @@
                         color: rgba(255, 255, 255, 0.4);
                         padding: 0 0 1px 5px;
                     }
-                    .fa-chevron-down {
+                    .accordion-icon {
                         display: none;
                     }
                 }
@@ -72,10 +72,15 @@
                         max-height: 20rem;
                     }
                     .accordion-header .fa-chevron-right {
-                        display: none
+                        animation: turn .5s;
+                        transform: rotate(90deg);
                     }
-                    .accordion-header .fa-chevron-down {
+                    .accordion-header .accordion-icon {
                         display: block;
+                        padding-left: 2px;
+                        height: 20px;
+                        width: 20px;
+                        animation: slide-in 1.5s;
                     }
                 }
                 .fa-solid {
@@ -83,5 +88,25 @@
                 }
             }
         }
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes turn {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
     }
 }
