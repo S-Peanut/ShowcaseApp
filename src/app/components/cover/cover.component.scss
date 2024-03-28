@@ -1,12 +1,9 @@
 @import '../../../assets/styles/variables.scss';
 .cover-container {
-    background-color: #1C1E22;
+    background-color: $color-dark3;
     background-size: 200% auto;
-    background-image: radial-gradient(circle, rgba(51, 69, 233, 0.465) 10%, rgba(253, 29, 29, 0) 48%);
+    background-image: radial-gradient(circle, rgba(51, 69, 233, 0.465) 10%, transparent 48%);
     background-position: bottom 0 right -120vw;
-    @media screen and (max-width: $sm-screen) {
-        background-position: bottom 0 right -120vw;
-    }
     background-repeat: no-repeat;
     overflow: hidden; // hides - margin of the widget
     width: 100%;
@@ -18,12 +15,12 @@
         flex-direction: column;
         h1 {
             font-size: 3.5rem;
-            color: #ffe4c4;
+            color: $color-bisque2;
             font-weight: 700;
         }
         h2 {
             font-size: 1.5rem;
-            color: bisque;
+            color: $color-bisque2;
             font-weight: 400;
         }
     }
@@ -32,7 +29,7 @@
         border-bottom-left-radius: 10px;
         border-top-left-radius: 6px;
         .widget-card {
-            color: rgba(255, 255, 255, 0.603);
+            color: $color-secondary-gray;
             display: flex;
             justify-content: center;
             flex-direction: column;

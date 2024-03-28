@@ -4,7 +4,7 @@
     height: 100%;
     color: $color-bisque2;
     background-size: 200% auto;
-    background-image: radial-gradient(circle, rgba(51, 69, 233, 0.465) 10%, rgba(253, 29, 29, 0) 48%);
+    background-image: radial-gradient(circle, rgba(51, 69, 233, 0.465) 10%, transparent 48%);
     background-position: bottom left -140vw;
     @media screen and (min-width: $sm-screen) {
         background-position: bottom left -120vw;

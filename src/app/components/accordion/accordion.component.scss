@@ -9,7 +9,10 @@
 
 .accordion-container {
     section {
-        background-color: #000000;
+        background-color: $color-dark3;
+        background-image: radial-gradient(circle, rgba(51, 69, 233, 0.143) 10%, transparent 48%);
+        background-position: center;
+        background-repeat: no-repeat;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -17,16 +20,16 @@
             margin: 0 auto;
             padding: 0 1.5rem;
             .accordion-item {
-                background-color: #000000;
+                background-color: transparent;
                 border: none;
                 hr {
                     border: 1px solid rgba(255, 255, 255, 0.5);
                 }
                 .accordion-header {
                     font-size: 1.6rem;
-                    color: rgba(255, 255, 255, .8);
+                    color: $color-bisque2;
                     text-decoration: none;
-                    background-color: #000000;
+                    background-color: transparent;
                     width: 100%;
                     display: flex;
                     align-items: center;
@@ -48,8 +51,10 @@
                     }
                     li {
                         font-size: 10px;
-                        color: rgba(255, 255, 255, 0.4);
+                        color: $color-secondary-gray;
                         padding: 0 0 1px 5px;
+                        display: flex;
+                        flex-direction: row;
                     }
                     .accordion-icon {
                         display: none;
@@ -59,10 +64,10 @@
                     max-height: 0;
                     overflow: hidden;
                     position: relative;
-                    background-color: #000;
+                    background-color: transparent;
                     transition: max-height 650ms;
                     p {
-                        color: #fff;
+                        color: $color-secondary-gray;
                         font-size: 15px;
                         padding: 2rem;
                     }
