@@ -23,7 +23,7 @@
                 background-color: transparent;
                 border: none;
                 hr {
-                    border: 1px solid rgba(255, 255, 255, 0.5);
+                    border: 1px solid $color-border-crystal;
                 }
                 .accordion-header {
                     font-size: 1.6rem;
@@ -40,7 +40,7 @@
                         font-size: 20px;
                     }
                     i {
-                        color: #e7d5ff;
+                        color: $color-border-crystal;
                         padding: .5rem;
                     }
                     ul {
@@ -69,7 +69,7 @@
                     p {
                         color: $color-secondary-gray;
                         font-size: 15px;
-                        padding: 2rem;
+                        padding: 1rem 2rem;
                     }
                 }
                 &:target {

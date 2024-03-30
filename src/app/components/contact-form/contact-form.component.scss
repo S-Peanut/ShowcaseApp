@@ -19,7 +19,7 @@
                     background-color: transparent;
                     border: none;
                     font-style: italic;
-                    border-bottom: 1px solid $color-gray;
+                    border-bottom: 1px solid $color-border-crystal;
                     transition: border 1s;
                     transition: box-shadow 1s;
                     &:hover,
@@ -35,7 +35,7 @@
                     }
                 }
                 .input-icon {
-                    color: $color-bisque2;
+                    color: $color-border-crystal;
                     padding: 5px;
                     transition: color .5s;
                 }

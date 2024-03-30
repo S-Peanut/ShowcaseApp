@@ -33,6 +33,9 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
+            p i {
+                color: $color-soft-violet;
+            }
         }
     }
 }
