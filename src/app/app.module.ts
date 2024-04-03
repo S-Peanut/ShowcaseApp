@@ -16,6 +16,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from './services/contact.service';
 import { AccordionComponent } from './components/accordion/accordion.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { IntersectDirective } from './directives/intersect.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { AccordionComponent } from './components/accordion/accordion.component';
     ContactFormComponent,
     ContainerComponent,
     ContentCardComponent,
-    AccordionComponent
+    AccordionComponent,
+    ProjectCardComponent,
+    IntersectDirective
   ],
   imports: [
     BrowserModule,

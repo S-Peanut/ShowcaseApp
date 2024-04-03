@@ -20,7 +20,7 @@
             <label class="block row-span-2 md:row-start-1 md:col-start-4 md:col-end-8 min-w-44" for="Comment">
                     <textarea formControlName="Comment" name="Comment" class="resize-none mt-0 block w-full h-full px-0.5 focus:ring-0" rows="2" placeholder="Provide a short description of your project and I will contact you shortly."></textarea>
                 </label>
-            <button type="submit" class="gradient-submit-btn md:row-start-3 md:col-start-5 md:col-end-7  button-87" [disabled]="!FormData.valid">Send <i class="fa-solid fa-arrow-right"></i></button>
+            <button appIntersect (visible)="intersectView($event)" type="submit" class="gradient-submit-btn md:row-start-3 md:col-start-5 md:col-end-7  button-87" [disabled]="!FormData.valid">Send <i class="fa-solid fa-arrow-right"></i></button>
         </form>
     </div>
 </div>

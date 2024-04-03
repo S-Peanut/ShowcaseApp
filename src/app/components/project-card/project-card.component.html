@@ -1,0 +1,25 @@
+<div class="card-container flex-center">
+    <div class="card-inner max-w-5xl">
+        <div class="celestial card-content flex flex-col rounded p-4" [ngClass]="[reverse ? 'sm:flex-row-reverse' : 'sm:flex-row']" *ngIf="!skeleton">
+            <div class="project-img h-3/5 sm:h-full sm:w-3/6">
+                <img src="../../../assets/imgs/proj1.png" alt="proj-1-img">
+            </div>
+            <div class="self-start card-header h-2/5 sm:h-full sm:w-3/6">
+                <h1>Project X</h1>
+                <p class="text-lg">A landing page for a local artist</p>
+                <div>
+                    #CSharp #SCSS #Angular #DotNet
+                </div>
+            </div>
+        </div>
+        <div class="card-content flex flex-col rounded purple-paradise" [ngClass]="[reverse ? 'sm:flex-row-reverse' : 'sm:flex-row']" *ngIf="skeleton">
+            <div class="project-img h-3/5 sm:h-full sm:w-3/6 p-3">
+                <img src="../../../assets/imgs/Type=Square.svg" alt="proj-1-img">
+            </div>
+            <div class="flex-center column card-header h-2/5 sm:h-full sm:w-3/6 p-2">
+                <img class="py-3" src="../../../assets/imgs/Type=Text.svg" alt="proj-1-img">
+                <img src="../../../assets/imgs/Type=Paragraph.svg" alt="proj-1-img">
+            </div>
+        </div>
+    </div>
+</div>

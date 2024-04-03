@@ -8,7 +8,9 @@ import { Component, HostListener, Renderer2 } from '@angular/core';
 export class AccordionComponent {
         constructor(private renderer: Renderer2) {}
 
-        preventScroll(id: string) {
+        preventScroll(e:any,id: string) {
+                // e.preventDefault();
+                console.log
                 const accordionItem = document.getElementById(id);
                 let scrollTop = accordionItem?.getBoundingClientRect().top
                 this.renderer.setStyle(accordionItem, 'scroll-margin-top', `${scrollTop}px`);

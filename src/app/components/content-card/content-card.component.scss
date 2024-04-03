@@ -2,19 +2,24 @@
 .content-card-container {
     .text-section {
         position: relative;
+        opacity: 0;
+        transition: opacity 1s;
         color: $color_dark1;
         padding: 20px;
-        .tag-icon {
-            position: absolute;
-            &.open {
-                top: -30px;
-                left: 0;
-                animation: slide-in-left 5s;
-            }
-            &.close {
-                bottom: -30px;
-                right: 0;
-                animation: slide-in-right 5s;
+        &.show {
+            opacity: 1;
+            .tag-icon {
+                position: absolute;
+                &.open {
+                    top: -30px;
+                    left: 0;
+                    animation: slide-in-left 5s;
+                }
+                &.close {
+                    bottom: -30px;
+                    right: 0;
+                    animation: slide-in-right 5s;
+                }
             }
         }
     }

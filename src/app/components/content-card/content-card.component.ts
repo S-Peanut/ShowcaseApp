@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./content-card.component.scss']
 })
 export class ContentCardComponent {
-
+        intersectView(elRef: any) {
+                elRef.classList.add('show')
+        }
 }

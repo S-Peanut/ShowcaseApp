@@ -1,0 +1,25 @@
+@import '../../../assets/styles/colors.scss';
+.card-container {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    .card-inner {
+        height: 100%;
+        width: 100%;
+        color: bisque;
+        .card-content {
+            height: 100%;
+            width: 100%;
+            .project-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

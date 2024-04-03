@@ -8,20 +8,19 @@
     <div class="about-card p-16 flex-center h-[60svh] sm:h-[40dvh]">
         <app-content-card></app-content-card>
     </div>
-    <div class="skills-accordion h-svh w-screen sm:h-[60vh]">
+    <div class="skills-accordion h-svh w-screen sm:h-[50vh]">
         <app-accordion></app-accordion>
     </div>
-    <div class="main-content flex-center column">
-        <!-- <app-showcase-item></app-showcase-item>
-        <app-showcase-item></app-showcase-item>
-        <app-showcase-item></app-showcase-item> -->
-        <p>---------------------------------------</p>
-        <p>---------------------------------------</p>
-        <p>---------------------------------------</p>
-        <p>----------------Project Cards------------</p>
-        <p>---------------------Comming-------------</p>
-        <p>---------------------------------------</p>
-        <p>---------------------------------------</p>
+    <div class="main-content min-h-svh flex flex-col">
+        <div appIntersect (visible)="intersectView($event)" class="card-container h-[70svh] sm:h-[50vh] sm:min-h-80">
+            <app-project-card [reverse]="true"></app-project-card>
+        </div>
+        <div appIntersect (visible)="intersectView($event)" class="card-container h-[70svh] sm:h-[50vh] sm:min-h-80">
+            <app-project-card [skeleton]="true"></app-project-card>
+        </div>
+        <div appIntersect (visible)="intersectView($event)" class="card-container h-[70svh] sm:h-[50vh] sm:min-h-80">
+            <app-project-card [reverse]="true" [skeleton]="true"></app-project-card>
+        </div>
     </div>
     <div class="contact-form h-svh md:h-[80vh]">
         <app-contact-form></app-contact-form>

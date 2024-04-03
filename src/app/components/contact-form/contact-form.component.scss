@@ -40,6 +40,24 @@
                     transition: color .5s;
                 }
             }
+            .quickFlash {
+                animation: quickFlash 2s;
+            }
         }
+    }
+}
+
+@keyframes quickFlash {
+    0% {
+        color: rgba(248, 72, 69, 0.796);
+        background-position: right center;
+    }
+    50% {
+        background-position: left center;
+        color: rgba(248, 72, 69, 0.796);
+    }
+    100% {
+        background-position: right center;
+        color: rgba(248, 72, 69, 0.796);
     }
 }

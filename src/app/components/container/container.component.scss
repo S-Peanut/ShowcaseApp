@@ -25,11 +25,31 @@
             width: 100%;
         }
         .main-content {
-            height: 500px;
+            .card-container {
+                width: 100%;
+                padding: 1rem 1.5rem;
+                opacity: 0;
+                transition: opacity 1s;
+                &.show {
+                    opacity: 1;
+                    animation: slide-in 1s;
+                }
+            }
         }
         &::-webkit-scrollbar {
             display: none;
         }
         /* Hide scrollbar for IE, Edge and Firefox */
         -ms-overflow-style: none;
+    }
+    
+    @keyframes slide-in {
+        0% {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
     }

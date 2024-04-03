@@ -3,8 +3,15 @@ $color-dark1: rgb(74, 74, 74);
 $color-dark2: #1C1C1C;
 $color-dark3: #1C1E22;
 $color-dark4: #01000c;
-$color-bisque2: rgba(255, 228, 196, 0.603);
+$color-bisque2: #ffe4c49a;
 $color-border-crystal: #d0c7ec6a;
 $color-secondary-gray: rgba(207, 204, 199, 0.814);
 $color-alpha_blue: rgba(51, 69, 233, 0.465);
-$color-soft-violet: rgba(168, 148, 225, 0.364)
+$color-soft-violet: rgba(168, 148, 225, 0.364);
+.celestial {
+    background: linear-gradient(to right, #c33764, #1d2671);
+}
+
+.purple-paradise {
+    background: linear-gradient(to right, #1d2b64, #f8cdda);
+}

@@ -19,4 +19,8 @@ FormData: FormGroup = new FormGroup({});
                        Comment: new FormControl('', [Validators.required])
                 })
         }
+
+        intersectView(elRef: any) {
+              elRef.classList.add('quickFlash');
+        }
 }
