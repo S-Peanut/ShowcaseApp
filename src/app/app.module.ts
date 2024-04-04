@@ -18,6 +18,7 @@ import { ContactService } from './services/contact.service';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { IntersectDirective } from './directives/intersect.directive';
+import { StopPropagationDirective } from './directives/stop-propagation.directive';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { IntersectDirective } from './directives/intersect.directive';
     ContentCardComponent,
     AccordionComponent,
     ProjectCardComponent,
-    IntersectDirective
+    IntersectDirective,
+    StopPropagationDirective
   ],
   imports: [
     BrowserModule,

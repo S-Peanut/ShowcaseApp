@@ -11,14 +11,14 @@
     <div class="skills-accordion h-svh w-screen sm:h-[50vh]">
         <app-accordion></app-accordion>
     </div>
-    <div class="main-content min-h-svh flex flex-col">
-        <div appIntersect (visible)="intersectView($event)" class="card-container h-[70svh] sm:h-[50vh] sm:min-h-80">
+    <div class="main-content flex flex-col">
+        <div appIntersect (visible)="intersectView($event)" class="card-container h-[90svh] min-h-80 sm:h-[40vh] ">
             <app-project-card [reverse]="true"></app-project-card>
         </div>
-        <div appIntersect (visible)="intersectView($event)" class="card-container h-[70svh] sm:h-[50vh] sm:min-h-80">
+        <div appIntersect (visible)="intersectView($event)" class="card-container h-[90svh] min-h-80 sm:h-[40vh] ">
             <app-project-card [skeleton]="true"></app-project-card>
         </div>
-        <div appIntersect (visible)="intersectView($event)" class="card-container h-[70svh] sm:h-[50vh] sm:min-h-80">
+        <div appIntersect (visible)="intersectView($event)" class="card-container h-[90svh] min-h-80 sm:h-[40vh]">
             <app-project-card [reverse]="true" [skeleton]="true"></app-project-card>
         </div>
     </div>
