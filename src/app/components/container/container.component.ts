@@ -1,4 +1,4 @@
-import { AfterContentChecked, Component, HostListener, Renderer2 } from '@angular/core';
+import { AfterViewInit, Component, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-container',
@@ -6,9 +6,9 @@ import { AfterContentChecked, Component, HostListener, Renderer2 } from '@angula
   styleUrls: ['./container.component.scss']
 })
 export class ContainerComponent {
-        scrollTop = 0;
-        hideNav = false;   
-
+        public scrollTop = 0;
+        public hideNav = false; 
+        
         @HostListener('window:scroll', ['$event']) 
         onScroll() {
                 this.hideNav = this.scrollTop < window.scrollY;
@@ -17,5 +17,5 @@ export class ContainerComponent {
         
         intersectView(e: any) {
                 e.classList.add('show');
-         }
+        }
 }

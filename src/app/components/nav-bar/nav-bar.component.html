@@ -1,22 +1,38 @@
 <div class="sm:hidden mobile">
     <button *ngIf="!mobileNavOn" class="toggle-btn m-10 text-xl" (click)="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
     <nav [ngClass]="{'slide-in': mobileNavOn, 'slide-out' : !mobileNavOn}" (click)="toggleMenu()" class="flex-center column poppins-light">
-        <button class="nav-btn">
-                        <img src="../../../assets/icons/Home.svg" class="svg-icon" alt="svg-icon" />  
-                </button>
-        <button class="nav-btn">@bout</button>
-        <button class="nav-btn">Projects</button>
-        <button class="nav-btn">Contact</button>
+        <a href="#home">
+            <button class="nav-btn">
+                                        <img src="../../../assets/icons/Home.svg" class="svg-icon" alt="svg-icon" />  
+                        </button>
+        </a>
+        <a href="#about">
+            <button class="nav-btn">@bout</button>
+        </a>
+        <a href="#projects">
+            <button class="nav-btn">Projects</button>
+        </a>
+        <a href="#contact">
+            <button class="nav-btn">Contact</button>
+        </a>
     </nav>
 </div>
 
 <div class="hidden sm:block full-size">
     <nav class="flex-center poppins-light">
-        <button class="nav-btn">
-                    <img src="../../../assets/icons/Home.svg" class="svg-icon" alt="svg-icon" />  
-            </button>
-        <button class="nav-btn">@bout</button>
-        <button class="nav-btn">Projects</button>
-        <button class="nav-btn">Contact</button>
+        <a href="#home">
+            <button class="nav-btn">
+                                            <img src="../../../assets/icons/Home.svg" class="svg-icon" alt="svg-icon" />  
+                            </button>
+        </a>
+        <a href="#about">
+            <button class="nav-btn">@bout</button>
+        </a>
+        <a href="#projects">
+            <button class="nav-btn">Projects</button>
+        </a>
+        <a href="#contact">
+            <button class="nav-btn">Contact</button>
+        </a>
     </nav>
 </div>

@@ -1,5 +1,7 @@
     @import '../../../assets/styles/colors.scss';
     .page-content {
+        background-color: $color-bisque3;
+        overflow: hidden;
         .footer {
             width: 100%;
             color: $color_gray;

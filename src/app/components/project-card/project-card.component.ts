@@ -11,30 +11,20 @@ export class ProjectCardComponent {
 
 @Input () reverse: boolean = false;
 @Input () skeleton: boolean = false;
-
-public HideBackdropBtn: boolean = false;
-        
-// outsideBackdropClick (e: any) {
-        //         e.stopPropagation(); 
-        //         let hidden = this.Backdrop?.nativeElement.classList.contains('hide');
-        //         if (!hidden)
-        //         {
-                //                 this.Backdrop?.nativeElement.classList.add('hide'); 
-                //         }
-                // }
-                
+                 
         @HostListener('document:click', ['$event'])  
         backdropToggle(e: any) {
                 e.stopPropagation(); 
                 let hidden = this.Backdrop?.nativeElement.classList.contains('hide');
-
+        
                 if (hidden && e.target === this.backdropBtn?.nativeElement) {
                         this.Backdrop?.nativeElement.classList.remove('hide');
-                        this.HideBackdropBtn = true;
+                        this.backdropBtn?.nativeElement.classList.add('hide-backdrop-btn');
+
                 }  
                 if (!hidden && e.target !== this.Backdrop?.nativeElement){
                         this.Backdrop?.nativeElement.classList.add('hide');
-                        this.HideBackdropBtn = false;
+                        this.backdropBtn?.nativeElement.classList.remove('hide-backdrop-btn');
                 }    
         }
 }

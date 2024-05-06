@@ -4,24 +4,22 @@
             <div class="project-img h-3/5 sm:h-full sm:w-3/6">
                 <img src="../../../assets/imgs/proj1.png" alt="proj-1-img">
             </div>
-            <div class="card-header h-2/5 sm:h-full sm:w-3/6 fira-sans-regular flex-center column">
+            <div class="card-header h-2/5 sm:h-full sm:w-3/6 fira-sans-regular flex justify-center flex-col">
                 <div class="flex flex-row">
-                    <span class="text-2xl font-bold"><span class="accent">AP`s</span> arts </span>
+                    <span class="text-2xl font-bold">AP`s arts </span>
                     <span class="italic p-2">-landing page-</span>
                 </div>
                 <hr>
-                <p class="text-lg">art/photography showcase page</p>
+                <p class="italic">art/photography showcase page</p>
                 <div class="tech">
-                    <span class="tech-item">Angular<img class="skill-icon" src="../../../assets/icons/angular3.svg"></span>
-                    <span class="tech-item">Material<img class="skill-icon" src="../../../assets/icons/material.svg"></span>
-                    <span class="tech-item">Tailwind<img class="skill-icon" src="../../../assets/icons/tailwind2.svg"></span>
-                    <span class="tech-item">DotNet</span>
+                    <span class="tech-item mr-1">Angular<img class="skill-icon" src="../../../assets/icons/angular3.svg"></span>
+                    <span class="tech-item mr-1">Material<img class="skill-icon" src="../../../assets/icons/material.svg"></span>
+                    <span class="tech-item mr-1">Tailwind<img class="skill-icon" src="../../../assets/icons/tailwind2.svg"></span>
                 </div>
-                <div *ngIf="!HideBackdropBtn" #backdropBtn (click)="backdropToggle($event)" class="backdrop-btn flex-center 
-                "><i class="fa-solid fa-angles-up"></i></div>
+                <div #backdropBtn (click)="backdropToggle($event)" class="backdrop-btn p-3"><i class="fa-solid fa-angles-up"></i></div>
             </div>
         </div>
-        <div class="card-content flex flex-col rounded purple-paradise" [ngClass]="[reverse ? 'sm:flex-row-reverse' : 'sm:flex-row']" *ngIf="skeleton">
+        <div class="card-content flex flex-col rounded" [ngClass]="[reverse ? 'sm:flex-row-reverse' : 'sm:flex-row']" *ngIf="skeleton">
             <div class="project-img h-3/5 sm:h-full sm:w-3/6 p-3">
                 <img src="../../../assets/imgs/Type=Square.svg" alt="proj-1-img">
             </div>

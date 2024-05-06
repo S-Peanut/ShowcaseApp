@@ -39,6 +39,9 @@
                 -webkit-text-fill-color: transparent;
             }
         }
+        a {
+            color: inherit;
+        }
     }
 }
 
@@ -66,6 +69,9 @@
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
+        }
+        a {
+            color: inherit;
         }
     }
 }
